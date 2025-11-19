@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoopFinder - Graph Agent Simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <button id="generateGraph">💥</button>
+            <button id="resetAgents">↻</button>
+            <button id="stepAgents">⏯︎</button>
+            <button id="progressAgents">▶︎</button>
+            <button id="loadGraph" style="margin-left: auto;">📝</button>
+            <button id="showGraphSerialization">👓</button>
+        </div>
+        <div id="graphContainer"></div>
+        <div class="agent-controls">
+            <div class="agent-selector">
+                <label for="numAgents">Number of Agents:</label>
+                <select id="numAgents">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="agent-controls-content">
+                <div id="agentTextAreas" class="agent-inputs"></div>
+                <div class="agent-legend">
+                    <h3>Instructions</h3>
+                    <div class="legend-item">
+                        <span class="legend-command">S</span>
+                        <span class="legend-description">STEP - Progress one node forward</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-command">N</span>
+                        <span class="legend-description">NOP - No operation (do nothing)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-command">C</span>
+                        <span class="legend-description">COND - Conditional: execute next instruction only if another agent is at current node</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-command">L</span>
+                        <span class="legend-description">LOOP - End execution and report suspected loop</span>
+                    </div>
+                    <div class="legend-note">
+                        <p>• Maximum 10 characters per instruction</p>
+                        <p>• Multiple S's = multiple steps</p>
+                        <p>• All instructions execute at each step</p>
+                        <p>• C must be followed by S or N (e.g., CS, CN)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
