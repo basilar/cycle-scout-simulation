@@ -2,7 +2,7 @@
 
 A purely front-end browser application that simulates programmable agents traversing a directed graph to detect cycles. Agents execute instruction sequences simultaneously, and the goal is to correctly identify whether the graph contains a loop.
 
-It has been developed as part of the ["PályaPanoráma"](https://palyapanorama.startakademia.hu/v-mini-edukacios-szakmai-nap-veszprem/#:~:text=Elevate%20Healthcare) programme in Hungary for Highschool students at the Lovassy László Gimnázium in Veszprém](http://web.lovassy.hu/). They had to program agents to detect cycles whilst competing against other teams.
+It has been developed as part of the "[PályaPanoráma](https://palyapanorama.startakademia.hu/v-mini-edukacios-szakmai-nap-veszprem/#:~:text=Elevate%20Healthcare)" programme in Hungary for Highschool students at the [Lovassy László Gimnázium in Veszprém](http://web.lovassy.hu/). They had to program agents to detect cycles whilst competing against other teams.
 
 ## Features
 
